@@ -17,6 +17,7 @@ class Rectangle{
     int width;
     int height;
 
+    //Rectangle 생성자
     public Rectangle(int x, int y, int width, int height) {
         this.x = x;
         this.y = y;
@@ -24,14 +25,18 @@ class Rectangle{
         this.height = height;
     }
 
+    //면적을 구하는 함수
     public int square(){
         return width*height;
     }
 
+
+    //Rectangle 상태 출력 함수
     public void show(){
         System.out.println("("+x+","+y+") 에서 크기가"+width+"x"+height+"인 사각형");
     }
 
+    //포함여부 출력 함수
     public boolean contains(Rectangle r) {
 
         if(x < r.x && y < r.y)
